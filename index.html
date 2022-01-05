@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./task.css" />
+    </head>
+    <body>
+        <main class="container">
+            <section class="section1">
+                <div class="step1">
+                    <h5 class="step__title">Step 1:</h5>
+                    <div class="sub__container">
+                        <h5>Select File</h5>
+                        <input type="file" class="input" />
+                        <p>Supported File Type(s): .CSV, .JSON</p>
+                    </div>
+                </div>
+                <div class="step2">
+                    <h5 class="step__title">Step 2:</h5>
+                    <div class="sub__container">
+                        <h5>Specify Format</h5>
+                        <div class="format__fields">
+                            <label for="file__type">File Type</label>
+                            <select name="fileType" id="file__type">
+                                <option value="CSV">CSV</option>
+                            </select>
+                        </div>
+                        <div class="format__fields">
+                            <label for="file__type">Character Encoding</label>
+                            <select name="fileType" id="file__type">
+                                <option value="CSV">UTF-8</option>
+                            </select>
+                        </div>
+                        <div class="format__fields">
+                            <label for="file__type">Delimeter</label>
+                            <select name="fileType" id="file__type">
+                                <option value="CSV">Comma</option>
+                            </select>
+                        </div>
+                        <div class="format__fields">
+                            <label for="file__type">Has Header</label>
+                            <input type="checkbox" class="header" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2">
+                <h5 class="step__title">
+                    <input type="checkbox" class="loadData" id="" /> Step 3:
+                </h5>
+                <div class="sub__container step3">
+                    <h5>display Handling</h5>
+                    <h5>Select the fields to be displayed</h5>
+                    <div class="handling__container">
+                        <div class="available__fields">
+                            <p class="title">Available Fields</p>
+                            <div class="available__box"></div>
+                        </div>
+                        <div class="field__buttons">
+                            <button class="add">>></button>
+                            <button class="remove"><<</button>
+                        </div>
+                        <div class="display__fields">
+                            <p class="title">Fields to be Displayed</p>
+                            <div class="display__box"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="call__to__action">
+                <button class="next">Next</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </main>
+    </body>
+    <script src="./main.js"></script>
+</html>
